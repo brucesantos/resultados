@@ -5,7 +5,7 @@ $(document).ready(function() {
   $("#btn-inicio").click(function() {
     TweenMax.to(".iniciar", .5, {
       marginTop: "-350px",
-      height: "90vh",
+      height: "100vh",
       ease: Back.easeOut.config(1.4),
       force3D:true
     });
@@ -21,6 +21,7 @@ $(document).ready(function() {
     $("#perdeu-etiqueta").fadeOut();
     $('.grupo-senha').addClass('bloqueado').find('input').prop('disabled', true);
 
+    $(".capa").fadeTo(500, 0);
     setTimeout(function(){
       $('#protocolo').trigger('touchstart');
     },1000);
@@ -46,6 +47,7 @@ $(document).ready(function() {
     $("#btn-voltar").hide();
     $("#btn-inicio").show();
     $("#perdeu-etiqueta").fadeIn();
+    $(".capa").fadeTo(500, 100);
   });
 
   $("#protocolo").on('keyup', function() {
