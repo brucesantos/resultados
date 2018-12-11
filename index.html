@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="pt" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>FIDI - Resultados de Exames</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">Você está usando um navegador <strong>desatualizado</strong>. Por favor <a href="https://browsehappy.com/">atualize seu navegador</a> para melhorar a sua experiência.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <nav>
+    <img id="logo" src="img/logo-fidi.png" alt="logomarca FIDI">
+    <h1>Resultados de Exames</h1>
+  </nav>
+
+  <section class="conteudo">
+    <div class="capa">
+      <p>Veja o resultado do seu exame utilizando a sua <strong>Etiqueta</strong>. Ela contém o número de <strong>Protocolo</strong> e a <strong>Senha</strong>.</p>
+      <img src="img/hand.png" alt="imagem de uma mão segurando uma etiqueta de exemplo">
+    </div>
+    <div class="iniciar">
+      <div class="spacer-1x"></div>
+      <div class="btn-wrapper">
+        <div class="btn-primary" id="btn-inicio">
+            <span>aperte aqui para continuar</span>
+        </div>
+        <div class="btn-stroke" id="btn-voltar" style="display:none;">
+            <span>voltar</span>
+        </div>
+      </div>
+      <div id="perdeu-etiqueta">
+        <p>
+          Você perdeu sua etiqueta? <br>
+          <a href="#">APERTE AQUI</a> para saber o que fazer.
+        </p>
+      </div>
+      <form action="/action_page.php" id="protocolo-senha">
+        <div class="form-group montagemAnimada">
+          <label for="protocolo">Protocolo</label>
+          <input pattern="[0-9]*" inputmode="numeric" type="text" id="protocolo" name="protocolo" maxlength="16">
+          <span class="dica">Nº com 16 dígitos da sua etiqueta</span>
+        </div>
+        <div class="spacer-2x"></div>
+        <div class="form-group montagemAnimada grupo-senha">
+          <label for="senha">Senha</label>
+          <input pattern="[0-9]*" inputmode="numeric" type="text" id="senha" name="senha" maxlength="8">
+          <span class="dica">Nº com 8 dígitos da sua etiqueta</span>
+        </div>
+        <div class="spacer-2x"></div>
+        <div class="btn-wrapper">
+          <button class="btn-primary bloqueado montagemAnimada" id="btn-fim">
+              <span>Ver o resultado</span>
+          </button>
+        </div>
+      </form>
+  </section>
+
+  <!-- inicio dos scripts -->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- fim dos scripts -->
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+</body>
+
+</html>
