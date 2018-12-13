@@ -16,6 +16,13 @@
 		"oAP": "/404.html",
 		"oF": 0
 		},
+	"/backup.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/backup.html",
+		"oF": 0
+		},
 	"/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -223,8 +230,8 @@
 		"oA": 0,
 		"oAP": "/icon.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -345,21 +352,14 @@
 		"oAP": "/site.webmanifest",
 		"oF": 0
 		},
-	"/teste.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/teste.html",
-		"oF": 0
-		},
 	"/tile-wide.png": {
 		"ft": 32768,
 		"iS": 1854,
 		"oA": 0,
 		"oAP": "/tile-wide.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -369,8 +369,8 @@
 		"oA": 0,
 		"oAP": "/tile.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		}

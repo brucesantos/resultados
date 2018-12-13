@@ -5,8 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>FIDI - Resultados de Exames</title>
-  <meta name="description" content="">
+  <meta name="description" content="Veja os resultados dos seus exames de forma prática e rápida. Insira seu Número de protocolo e senha que estão na etiqueta que você recebeu no dia do exame para acessar.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="FIDI - Resultados de Exames"/>
+  <meta property="og:url" content="http://resultado.fidi.org.br" />
+  <meta property="og:image" content="https://fidi.org.br/wp-content/themes/ammo/assets/plugins/bootstrap/images/logo-fidi.png" />
+  <meta property="og:description" content="Veja os resultados dos seus exames de forma prática e rápida através do seu navegador. No computador ou no seu celular."/>
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -42,27 +46,27 @@
             <span>voltar</span>
         </div>
       </div>
-      <div id="perdeu-etiqueta">
+      <!-- <div id="perdeu-etiqueta">
         <p>
           Você perdeu sua etiqueta? <br>
           <a href="#">APERTE AQUI</a> para saber o que fazer.
         </p>
-      </div>
+      </div> -->
       <form action="/action_page.php" id="protocolo-senha">
         <div class="form-group montagemAnimada">
           <label for="protocolo">Protocolo</label>
-          <input pattern="[0-9]*" inputmode="numeric" type="text" id="protocolo" name="protocolo" maxlength="16">
+          <input pattern="[0-9]*" inputmode="numeric" type="text" id="Txt_Protocolo" name="protocolo" maxlength="16">
           <span class="dica">Nº com 16 dígitos da sua etiqueta</span>
         </div>
         <div class="spacer-2x"></div>
         <div class="form-group montagemAnimada grupo-senha">
           <label for="senha">Senha</label>
-          <input pattern="[0-9]*" inputmode="numeric" type="text" id="senha" name="senha" maxlength="8">
+          <input pattern="[0-9]*" inputmode="numeric" type="text" id="Txt_Senha" name="senha" maxlength="8">
           <span class="dica">Nº com 8 dígitos da sua etiqueta</span>
         </div>
         <div class="spacer-2x"></div>
         <div class="btn-wrapper">
-          <button class="btn-primary bloqueado montagemAnimada" id="btn-fim">
+          <button class="btn-primary bloqueado montagemAnimada" id="Btn_Consultar">
               <span>Ver o resultado</span>
           </button>
         </div>
@@ -82,7 +86,7 @@
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    ga('create', 'UA-55732990-1', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
 </body>

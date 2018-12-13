@@ -1,0 +1,70 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Consultar_Resultados.aspx.vb" Inherits="Portal_de_Exames.Consultar_Resultados" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Resultado de Exames FIDI</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.fidi.org.br">
+          <img src="img/logo-fidi.png" alt="logo fidi"/>
+        </a>
+      </div>
+      <h2>RESULTADO DE EXAMES</h2>
+    </div>
+  </nav>
+
+  <header class="container-fluid">
+    <h4>Acesse os resultados dos seus exames de forma prática e rápida. Insira seu Número de protocolo e senha para ter
+      os resultados. Acesse e confira</h4>
+    </header>
+
+    <article class="container-fluid">
+      <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
+      <form id="form1" runat="server" class="block">
+        <div class="centered">
+          <br />
+          <br />
+          <img src="img/etiqueta.png" alt="etiqueta de exame" />
+          <br />
+          <br />
+
+          <div class="form-group  ">
+            <%--<label for="labelProtocolo">Protocolo:</label>--%>
+            <asp:TextBox ID="Txt_Protocolo" runat="server" TextMode="SingleLine" class="form-control" placeholder="Digite seu protocolo"></asp:TextBox>
+          </div>
+          <div class="form-group  ">
+            <%--<label for="labelSenha">Senha:</label>--%>
+            <asp:TextBox ID="Txt_Senha" runat="server" TextMode="Password" class="form-control" placeholder="Digite sua senha"></asp:TextBox>
+          </div>
+
+          <br />
+          <!-- COLOCAR O CAPTCHA AQUI -->
+          <!-- <div class="g-recaptcha" data-sitekey="6LfoWkIUAAAAAEbg4MsbitVTfWVUHSLKPO_SvcDg"></div> -->
+          <br />
+        </div>
+
+        <div class="container block">
+          <asp:label id="lblError" runat="server" class="centered"
+          forecolor="Red" visible="False" style="font-family: 'Trebuchet MS'">Mensagem</asp:label>
+        </div>
+        <div class="container block">
+          <asp:Button ID="Btn_Consultar" runat="server" Text="Consultar" class="btn btn-primary centered"></asp:Button>
+
+        </div>
+
+      </form>
+    </article>
+  </body>
+  </html>

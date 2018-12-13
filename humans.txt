@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Bruno Santos -- Designer -- @brucesantos
+    Ana Sebescen -- Designer -- @anasbsn
 
 # THANKS
 
-    <name>
+    Alfredo Rodrigues
+    Anelize Condino
+    Joana Engel
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, JS, jQuery, Greensock,

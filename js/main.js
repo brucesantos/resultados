@@ -23,14 +23,13 @@ $(document).ready(function() {
 
     $(".capa").fadeTo(500, 0);
     setTimeout(function(){
-      $('#protocolo').trigger('touchstart');
+      $('#Txt_Protocolo').trigger('touchstart');
     },1000);
 
   }); //esse é o clique no botão de inicio
 
-  $('#protocolo').on('touchstart', function() {
+  $('#Txt_Protocolo').on('touchstart', function() {
     $(this).focus();
-    console.log('protocolo');
   });
 
   $("#btn-voltar").click(function() {
@@ -50,22 +49,22 @@ $(document).ready(function() {
     $(".capa").fadeTo(500, 100);
   });
 
-  $("#protocolo").on('keyup', function() {
+  $("#Txt_Protocolo").on('keyup', function() {
     if($(this).val().length == 16) {
-      $("#senha").prop('disabled', false).focus();
+      $("#Txt_Senha").prop('disabled', false).focus();
       $(".grupo-senha").removeClass('bloqueado');
     } else {
-      $("#senha").prop('disabled', true);
+      $("#Txt_Senha").prop('disabled', true);
       $(".grupo-senha").addClass('bloqueado');
     }
   });
 
-  $("#senha").on('keyup', function() {
+  $("#Txt_Senha").on('keyup', function() {
     if($(this).val().length == 8) {
-      $("#btn-fim").removeClass('bloqueado').addClass('ativado').focus();
-      $("#senha").blur();
+      $("#Btn_Consultar").removeClass('bloqueado').addClass('ativado').focus();
+      $("#Txt_Senha").blur();
     } else {
-      $("#btn-fim").addClass('bloqueado').removeClass('ativado');
+      $("#Btn_Consultar").addClass('bloqueado').removeClass('ativado');
     }
   });
 
