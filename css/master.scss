@@ -10,7 +10,8 @@
 // VARIABLES
 // ====================
 $color-primary: #183E5F;
-$color-accent: #F12E74;
+$color-accent: #15be7d;
+$color-error: #e91a52;
 
 $radius-primary: 4px;
 
@@ -168,7 +169,7 @@ nav {
 }
 .iniciar {
   background: white;
-  width: 100vw;
+  // width: 100%;
   padding: 1em;
   margin-top: 0px;
   #perdeu-etiqueta {
@@ -180,4 +181,21 @@ nav {
   #protocolo-senha {
     margin-top: 3em;
   }
+}
+
+.erro {
+  position: fixed;
+  top: -200px;
+  left: 50%;
+  z-index: 4;
+  padding: 1em;
+  width: 300px;
+  margin: 1em;
+  margin-left: -150px;
+  background-color: lighten($color-error, 38);
+  color: darken($color-error, 10);
+  text-align: center;
+  line-height: 1.3;
+  border-radius: .5em;
+  box-shadow: 0 14px 28px rgba(100,0,0,0.25), 0 10px 10px rgba(100,0,0,0.22);
 }

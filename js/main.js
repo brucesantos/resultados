@@ -33,6 +33,7 @@ $(document).ready(function() {
   });
 
   $("#btn-voltar").click(function() {
+    $(".capa").fadeTo(0, 1);
     TweenMax.to(".iniciar", .5, {
       marginTop: 0,
       height: "initial",
@@ -46,7 +47,6 @@ $(document).ready(function() {
     $("#btn-voltar").hide();
     $("#btn-inicio").show();
     $("#perdeu-etiqueta").fadeIn();
-    $(".capa").fadeTo(500, 100);
   });
 
   $("#Txt_Protocolo").on('keyup', function() {
@@ -66,6 +66,20 @@ $(document).ready(function() {
     } else {
       $("#Btn_Consultar").addClass('bloqueado').removeClass('ativado');
     }
+  });
+
+
+  $('nav').click(function(){
+    TweenMax.to("#erro01", .5, {
+      y: 250,
+      ease: Back.easeOut
+    });
+    TweenMax.to("#erro01", .5, {
+      delay: 8,
+      y: 0,
+      ease: Power1.easeIn
+    });
+    console.log('funcoina');
   });
 
 
